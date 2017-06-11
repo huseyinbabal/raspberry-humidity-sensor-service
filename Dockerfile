@@ -4,8 +4,9 @@ ENV INITSYSTEM on
 
 EXPOSE 3000
 
-ADD index.js .
-ADD package.json .
+COPY index.js .
+COPY package.json .
+
 RUN npm install
 
 CMD ["npm", "start"]
